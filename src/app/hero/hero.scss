@@ -1,0 +1,47 @@
+.hero {
+  width: 100%;
+  height: 750px;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 60, 60);
+    background-image: url(../../../public/imgs/porotfolioHero.jpg);
+    // background-image: url(../../../public/imgs/portofolio.avif);
+    // background-image: url(../../../public/imgs/potofolio2.avif);
+    background-size: cover;
+
+    img {
+      width: 100%;
+      height: 1vh;
+    }
+
+    .hero__content {
+      text-align: center;
+      margin: auto;
+      padding: 200px 0;
+      h1 {
+        font-size: 3rem;
+        color: white;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 60px;
+      }
+      a {
+        background-color: rgb(61, 60, 60, 0.1);
+        color: white;
+        padding: 10px 15px;
+        border: white 2px solid;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: rgb(61, 60, 60, 0.6);
+      }
+    }
+  }
+}
