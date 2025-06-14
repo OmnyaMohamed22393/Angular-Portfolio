@@ -8,21 +8,27 @@
       <div class="skills__titles">
         <h3>MY FOCUS</h3>
         <span></span>
-        <h4>UI/UX Design</h4>
+        @for (item of focusItems; track item) {
+          <h4>{{ item }}</h4>
+        }
+        <!-- <h4>UI/UX Design</h4>
         <h4>Web Design</h4>
         <h4>Responsive Design</h4>
-        <h4>Mobile Design</h4>
+        <h4>Mobile Design</h4> -->
       </div>
       <div class="skills__rate">
         <ul>
-          <li><span>HTML</span></li>
+          @for (skill of skills; track skill) {
+            <li><span>{{ skill }}</span></li>
+          }
+          <!-- <li><span>HTML</span></li>
           <li><span>CSS</span></li>
           <li><span>JavaScript</span></li>
           <li><span>Typescript</span></li>
           <li><span>Sass</span></li>
           <li><span>Figma</span></li>
           <li><span>React</span></li>
-          <li><span>Angular</span></li>
+          <li><span>Angular</span></li> -->
         </ul>
       </div>
     </div>

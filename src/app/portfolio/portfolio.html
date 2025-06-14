@@ -4,7 +4,13 @@
       <h2>Portfolio</h2>
     </div>
     <div class="portfolio__cards">
-      <div class="card">
+      @for (item of portfolioItems; let i = $index; track item) {
+        <div class="card" [ngClass]="i % 2 === 0 ? 'even' : 'odd'">
+          <h3>{{ item }}</h3>
+          <span></span>
+        </div>
+      }
+      <!-- <div class="card">
         <h3>Web Design</h3>
         <span></span>
       </div>
@@ -27,7 +33,7 @@
       <div class="card">
         <h3>Cloud Computing</h3>
         <span></span>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
